@@ -1,0 +1,15 @@
+Source: eliloader
+Section: unknown
+Priority: extra
+Maintainer: Mike McClurg <mike.mcclurg@citrix.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/xen-org
+#Vcs-Git: git://git.debian.org/collab-maint/eliloader.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/eliloader.git;a=summary
+
+Package: eliloader
+Architecture: all
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
