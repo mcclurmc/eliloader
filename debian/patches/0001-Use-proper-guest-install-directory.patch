@@ -1,0 +1,26 @@
+From: Mike McClurg <mike.mcclurg@citrix.com>
+Date: Mon, 17 Oct 2011 16:04:08 +0100
+Subject: Use proper guest-install directory
+
+XCP appliance directory /opt/xensource/packages has moved to
+/usr/lib/xen-common/xapi/packages.
+
+Signed-off-by: Mike McClurg <mike.mcclurg@citrix.com>
+---
+ eliloader |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/eliloader b/eliloader
+index f2dd160..b3c9ebf 100644
+--- a/eliloader
++++ b/eliloader
+@@ -80,7 +80,7 @@ rounds = {
+     DISTRO_RHLIKE: 1, DISTRO_SLESLIKE: 2, DISTRO_DEBIANLIKE: 1, DISTRO_PYGRUB: 1
+     }
+ 
+-guest_installer_dir = "/opt/xensource/packages/files/guest-installer"
++guest_installer_dir = "/usr/lib/xen-common/xapi/files/guest-installer"
+ mapfiles = [ f for f in os.listdir(guest_installer_dir) if f.endswith('.map') ]
+ 
+ # We can sometimes tweak an installer's initrd to give it extra features, e.g.
+-- 
